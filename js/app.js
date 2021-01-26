@@ -31,7 +31,7 @@ function car (name, category, model){
     this.category = category;
     this.model = model;
     console.log(category);
-    this.img = `../imgs/${category.toLowerCase()}.png`;
+    this.img = `imgs/${category.toLowerCase()}.png`;
     this.appendRow();
     carsArr.push(this);
 };
