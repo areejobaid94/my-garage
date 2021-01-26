@@ -3,7 +3,7 @@ let carsArr = [];
 let form = document.getElementById('main-form');
 let table = document.getElementById('result-table');
 
-let  appendAll = function() {
+let appendAll = function() {
     for (let i = 0 ; i < carsArr.length;i++){
         let tr = document.createElement('tr');
         table.appendChild(tr);
