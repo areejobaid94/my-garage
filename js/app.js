@@ -9,7 +9,7 @@ let appendAll = function() {
         table.appendChild(tr);
         let tdImg = document.createElement('td');
         let img = document.createElement('img');
-        img.src = carsArr[i].img;
+        img.setAttribute('src',carsArr[i].img);
         tdImg.appendChild(img);
         tr.appendChild(tdImg);
         let tdText = document.createElement('td');
@@ -42,7 +42,7 @@ car.prototype.appendRow = function() {
     table.appendChild(tr);
     let tdImg = document.createElement('td');
     let img = document.createElement('img');
-    img.src = this.img;
+    img.setAttribute('src',this.img);
     tdImg.appendChild(img);
     tr.appendChild(tdImg);
     let tdText = document.createElement('td');
