@@ -83,6 +83,7 @@ let handelSubmit = function(event){
 let DeleteAll = function(){
     localStorage.removeItem('carsArr');
     carsArr = [];
+    updateLS();
     table.innerHTML = '';
 }
 form.addEventListener('submit',handelSubmit);
